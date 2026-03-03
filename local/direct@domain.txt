@@ -1,0 +1,5 @@
++.edu.cn
++.alicdn.com
++.taobao.com
++.aliyun.com
++.aliyuncs.com

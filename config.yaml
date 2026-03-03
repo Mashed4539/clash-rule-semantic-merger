@@ -1,0 +1,132 @@
+- path: reject@domain.mrs
+  behavior: domain
+  format: mrs
+  upstream:
+    pcdn:
+      type: http
+      url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/pcdn.txt
+      format: text
+    SogouInput:
+      type: file
+      path: local/sogouinput.txt
+      format: text
+    httpdns:
+      type: http
+      url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/dns.txt
+      format: text
+    local_httpdns:
+      type: file
+      path: local/httpdns@domain.txt
+      format: text
+    win-spy1:
+      type: http
+      url: https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/win-spy.txt
+      format: text
+    ad1:
+      type: http
+      url: https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/mihomo.mrs
+      format: mrs
+- path: reject@ip.mrs
+  behavior: ipcidr
+  format: mrs
+  upstream:
+    httpdns:
+      type: http
+      url: https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/meta/ipcidr/httpdns.list
+      format: text
+    local_httpdns:
+      type: file
+      path: local/httpdns@ip.txt
+      format: text
+- path: direct@domain.mrs
+  behavior: domain
+  format: mrs
+  upstream:
+    local_direct:
+      type: file
+      path: local/direct@domain.txt
+      format: text
+    microsoft-cn:
+      type: http
+      url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/microsoft-cn.list
+      format: text
+    apple-cn:
+      type: http
+      url: https://github.com/DustinWin/ruleset_geodata/raw/refs/heads/mihomo-ruleset/apple-cn.mrs
+      format: mrs
+    bilibili:
+      type: http
+      url: https://github.com/DustinWin/ruleset_geodata/raw/refs/heads/mihomo-ruleset/bilibili.mrs
+      format: mrs
+    win-update:
+      type: http
+      url: https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/win-update.txt
+      format: text
+    cnmax1:
+      type: http
+      url: https://raw.githubusercontent.com/P-256/Myself_China_List/refs/heads/main/china_list.txt
+      format: text
+    cnmax2:
+      type: http
+      url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/GeositeCN/GeositeCN_Domain.yaml
+      format: yaml
+    WeiYun:
+      type: http
+      url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/WeiYun/WeiYun_Domain.yaml
+      format: yaml
+    dupan:
+      type: http
+      url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/BaiduNetDisk/BaiduNetDisk_Domain.yaml
+      format: yaml
+    alipan:
+      type: http
+      url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/Alipan/Alipan_Domain.yaml
+      format: yaml
+- path: direct@ip.mrs
+  behavior: ipcidr
+  format: mrs
+  upstream:
+    lan:
+      type: file
+      path: local/lan@ip.txt
+      format: text
+    local_direct:
+      type: file
+      path: local/direct@ip.txt
+      format: text
+    cn1:
+      type: http
+      url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/cnip.mrs
+      format: mrs
+    cn2:
+      type: http
+      url: https://raw.githubusercontent.com/misakaio/chnroutes2/refs/heads/master/chnroutes.txt
+      format: text
+    clcn-1:
+      type: http
+      url: https://raw.githubusercontent.com/axpwx/IP-Data/refs/heads/master/provider/aliyun-cidr-ipv4.txt
+      format: text
+    clcn-2:
+      type: http
+      url: https://raw.githubusercontent.com/axpwx/IP-Data/refs/heads/master/provider/tencent-cidr-ipv4.txt
+      format: text
+    clcn-3:
+      type: http
+      url: https://raw.githubusercontent.com/axpwx/IP-Data/refs/heads/master/provider/huawei-cidr-ipv4.txt
+      format: text
+    clcn-4:
+      type: http
+      url: https://raw.githubusercontent.com/axpwx/IP-Data/refs/heads/master/provider/ucloud-cidr-ipv4.txt
+      format: text
+    clcn-5:
+      type: http
+      url: https://raw.githubusercontent.com/axpwx/IP-Data/refs/heads/master/provider/ksyun-cidr-ipv4.txt
+      format: text
+    clcn-6:
+      type: http
+      url: https://raw.githubusercontent.com/axpwx/IP-Data/refs/heads/master/provider/baidu-cidr-ipv4.txt
+      format: text
+    clcn-7:
+      type: http
+      url: https://raw.githubusercontent.com/axpwx/IP-Data/refs/heads/master/provider/jdcloud-cidr-ipv4.txt
+      format: text

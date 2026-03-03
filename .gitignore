@@ -1,0 +1,12 @@
+*
+!.gitignore
+
+!config.yaml
+!requirements.txt
+!rule_merger.py
+
+!/local
+!/local/*
+
+!.github/
+!.github/**
