@@ -18,10 +18,6 @@
       type: file
       path: local/httpdns@domain.txt
       format: text
-    win-spy1:
-      type: http
-      url: https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/win-spy.txt
-      format: text
     ad1:
       type: http
       url: https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/mihomo.mrs
