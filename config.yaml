@@ -18,10 +18,10 @@
       type: file
       path: local/httpdns@domain.txt
       format: text
-    ad1:
-      type: http
-      url: https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/mihomo.mrs
-      format: mrs
+    # ad1:
+    #   type: http
+    #   url: https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/mihomo.mrs
+    #   format: mrs
 - path: reject@ip.mrs
   behavior: ipcidr
   format: mrs
