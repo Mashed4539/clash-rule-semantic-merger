@@ -26,10 +26,10 @@
   behavior: ipcidr
   format: mrs
   upstream:
-    httpdns:
-      type: http
-      url: https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/meta/ipcidr/httpdns.list
-      format: text
+    # httpdns:
+    #   type: http
+    #   url: https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/meta/ipcidr/httpdns.list
+    #   format: text
     local_httpdns:
       type: file
       path: local/httpdns@ip.txt
