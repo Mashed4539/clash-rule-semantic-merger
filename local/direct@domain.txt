@@ -3,3 +3,4 @@
 +.taobao.com
 +.aliyun.com
 +.aliyuncs.com
++.bootcdn.net
